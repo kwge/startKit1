@@ -5,15 +5,19 @@ addons:
   firefox: latest
   apt:
     sources:
-      - google-chrome
+    - google-chrome
     packages:
-      - google-chrome-stable
+    - google-chrome-stable
 node_js:
-  - '6'
-  - '5'
-  - '4'
+- '6'
+- '5'
+- '4'
 before_script:
-  - npm install -g bower polymer-cli
-  - bower install
+- npm install -g bower polymer-cli
+- bower install
 script:
-  - xvfb-run npm test
+- xvfb-run npm test
+env:
+  global:
+  - secure: ZVPYvdLz/mV8vKNx1WPBsPQPh61OOxik7Jp+CjNEy+qXGN0gRaGlNi2ok3rSOoE9I5twCLOr1tresMYG2Jarc6AkCo+fjH1hPpGYJ8fd2dRlwRwsvX0Is5VaBE0yeYmYGoxVnVLiKdldziIWV95iHVTT7BWvAPYf0YqRLbS8UZAovEm+8ho4m12UPopiPCCmD4MoLcICMagcbbSG9Ext/xxENIOytrlpR6Ifk3nHOT9s0I6ww+iDDRTyTkhc1C47tWKwooI+kgw4sgzEQVBqa62Hbk9S17VeTCDhCsRhDG2ZK1IDlxCUWlvIaHF/QXm6pq9wpYkmNIel7VnbQryeEDW/n1J2dJpRGs7x1+ZThrmR0DTigcrCpG3ESFbzbOWKllNlIROSJWHoG7a+DGJA9NQCPXNXJPiYbOZHwZh8nNdFfbivrfrYCV8ovaKq7xtvyXhKQTI7JlO4gTVdjyW1DgAtGKrH/hCt7vEtP20zVrUCi8IgMvHgx0Y3F2dwKHSimk3UA5/Bri+CxZqLQWSPRoYCwaQzV8P3+UXl6gP6w/usxngQ5FEG9MB3uUNc4CMuOCSMbbtIBE0WMh3D9xdOTO7iwuF7X6yRq/gRIriLeW0uvSmcie52adLlxd+OJ8Q5v2OUlUuhp13qBBQXwIecp/1WdNgxakYQ5JhkBwMsPCE=
+  - secure: RvFSYNG+70iY3P4mIbzso+FnzLrIehInQxcPspHGzs7x99GN0FuykoPgmuraVpIA5tqH7ALbblcvFNBBTZh9lqTLRObXP3E9hxiacq0aU3xPzgNdBCumZ0qIuKXEU4RmNEGlxLHXNMJ8F5pfKidbQFQSUs7p8wr6qkrkqHnTwI974I8yhQo3pI5G950bdZ8toO4ZAtOHF+s5UsxZWS8DWFexjosup6n2kaW/DVgLwvk4LxZdgQJLIX2G+UxAlieBNnSJZljeVzInPp3mF0hHk4Vg4lXOrh2fuTYy3LJGUvjKV9VYa/GJPkaQn5QnX+/1/WoVzXGk0D9s1SY1Gg5azmquyVfmZG904gIGlrdBFR0hlvMA8SLQzqcPReXsIQERUbDFXTdDETF5qrWnfr9AaZFq+Wu8uP1KoCj4LptradhERR4vVSK147WvoI6hAZevT9hXCBZSNPtw9Bh9woruOVSgqSOGfM80kAHjFV/ODw0MD/dd2qdaR5FjqgEh8elQBpN85S+T0u94Il2lrLfI8sRKg44hxW4vt+XyHlozjd5yKeY6wZntATZEZcGUec88Ig5MdGeemZW/QOKxE9iAqzaLL15cu5i9LyOTpoThJFBjSYkXOWNh+pgrESDwjij9AgEPbQhL/CBy8Mp7V+2Gz9bpnu08EIAL5PfnZnm+WXg=
