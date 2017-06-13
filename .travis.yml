@@ -1,8 +1,10 @@
 language: node_js
-sudo: required
+node_js: stable
+sudo: false
 dist: trusty
 addons:
   firefox: latest
+  sauce_connect: true
   apt:
     sources:
     - google-chrome
@@ -11,12 +13,13 @@ addons:
 node_js:
 - '6'
 - '5'
-- '4'
 before_script:
-- npm install -g bower polymer-cli
+- npm install bower web-component-tester
+- export PATH=$PWD/node_modules/.bin:$PATH
 - bower install
 script:
-- xvfb-run npm test
+- xvfb-run wct --skip-plugin sauce
+- if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then wct --skip-plugin local; fi
 env:
   global:
   - secure: ZVPYvdLz/mV8vKNx1WPBsPQPh61OOxik7Jp+CjNEy+qXGN0gRaGlNi2ok3rSOoE9I5twCLOr1tresMYG2Jarc6AkCo+fjH1hPpGYJ8fd2dRlwRwsvX0Is5VaBE0yeYmYGoxVnVLiKdldziIWV95iHVTT7BWvAPYf0YqRLbS8UZAovEm+8ho4m12UPopiPCCmD4MoLcICMagcbbSG9Ext/xxENIOytrlpR6Ifk3nHOT9s0I6ww+iDDRTyTkhc1C47tWKwooI+kgw4sgzEQVBqa62Hbk9S17VeTCDhCsRhDG2ZK1IDlxCUWlvIaHF/QXm6pq9wpYkmNIel7VnbQryeEDW/n1J2dJpRGs7x1+ZThrmR0DTigcrCpG3ESFbzbOWKllNlIROSJWHoG7a+DGJA9NQCPXNXJPiYbOZHwZh8nNdFfbivrfrYCV8ovaKq7xtvyXhKQTI7JlO4gTVdjyW1DgAtGKrH/hCt7vEtP20zVrUCi8IgMvHgx0Y3F2dwKHSimk3UA5/Bri+CxZqLQWSPRoYCwaQzV8P3+UXl6gP6w/usxngQ5FEG9MB3uUNc4CMuOCSMbbtIBE0WMh3D9xdOTO7iwuF7X6yRq/gRIriLeW0uvSmcie52adLlxd+OJ8Q5v2OUlUuhp13qBBQXwIecp/1WdNgxakYQ5JhkBwMsPCE=
