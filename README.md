@@ -1,6 +1,7 @@
 # Polymer App Toolbox - Starter Kit
 
 [![Build Status](https://travis-ci.org/PolymerElements/polymer-starter-kit.svg?branch=master)](https://travis-ci.org/PolymerElements/polymer-starter-kit)
+[![Build Status](https://saucelabs.com/buildstatus/kwge242)](https://saucelabs.com/beta/builds/41f8b91f5b734f93bcdf13666669a1ce)
 
 This template is a starting point for building apps using a drawer-based
 layout. The layout is provided by `app-layout` elements.
