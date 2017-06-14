@@ -25,13 +25,14 @@ module.exports = {
                 "platform": "linux",
                 "version": "4.4"
             }, {
-                "browserName": "opera",
-                "platform": "Windows 7",
-                "version": "12"
-            }, {
                 "browserName": "firefox",
                 "platform": "Windows 7",
                 "version": "22"
+            }, {
+                "browserName": "iphone",
+                "platform": "iOS",
+                "version": "8.1",
+                "deviceName": "iPhone Simulator"
             }
             ]
         }
