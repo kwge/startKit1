@@ -2,6 +2,8 @@
 
 [![Build Status](https://saucelabs.com/buildstatus/kwge242)](https://saucelabs.com/beta/builds/41f8b91f5b734f93bcdf13666669a1ce)
 
+[![Build Status](https://saucelabs.com/browser-matrix/kwge242.svg)](https://saucelabs.com/beta/builds/41f8b91f5b734f93bcdf13666669a1ce)
+
 This template is a starting point for building apps using a drawer-based
 layout. The layout is provided by `app-layout` elements.
 
