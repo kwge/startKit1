@@ -30,9 +30,12 @@ module.exports = {
                 "version": "22"
             }, {
                 "browserName": "iphone",
-                "platform": "iOS",
-                "version": "8.1",
-                "deviceName": "iPhone Simulator"
+                "platform": "OS X 10.9",
+                "version": "8.1"
+            }, {
+                "browserName": "ipad",
+                "platform": "OS X 10.9",
+                "version": "8.1"
             }
             ]
         }
