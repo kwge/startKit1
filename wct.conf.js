@@ -24,6 +24,14 @@ module.exports = {
                 "browserName": "android",
                 "platform": "linux",
                 "version": "4.4"
+            }, {
+                "browserName": "opera",
+                "platform": "Windows 7",
+                "version": "12"
+            }, {
+                "browserName": "firefox",
+                "platform": "Windows 7",
+                "version": "22"
             }
             ]
         }
