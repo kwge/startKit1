@@ -36,6 +36,12 @@ module.exports = {
         "browserName": "ipad",
         "platform": "OS X 10.9",
         "version": "8.1"
+      }, {
+        "deviceName": "Android GoogleAPI Emulator",
+        "platformName": 'Android',
+        "platformVersion": '7.1',
+        "browserName": 'Chrome',
+        "appiumVersion": '1.6.5'
       }
       ]
     }
